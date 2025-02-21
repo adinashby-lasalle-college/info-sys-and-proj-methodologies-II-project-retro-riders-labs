@@ -39,28 +39,6 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "up",
-                    "id": "7e07b138-be04-4437-bac7-f2db2ec22e3b",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "2ac6cf8e-81b6-4be4-bdec-be3d70105a6f",
-                    "path": "<Keyboard>/s",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
                     "name": "right",
                     "id": "1dca0b2c-0b96-46ca-b54b-5b4a215e6d92",
                     "path": "<Keyboard>/d",
