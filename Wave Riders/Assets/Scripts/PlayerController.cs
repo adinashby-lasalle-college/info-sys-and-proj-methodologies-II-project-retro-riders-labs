@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
         Debug.Log(InputManager.movementInput.y);
 
         Vector3 movement;
-        movement = orientationCam.transform.forward * moveSpeed + orientationCam.transform.right * InputManager.movementInput.y * moveSpeed * 20; //* GetTimeMultiplier(); // + move left or right
+        movement = orientationCam.transform.forward * moveSpeed + orientationCam.transform.right * InputManager.movementInput.x * moveSpeed * 5; //* GetTimeMultiplier(); // + move left or right
         movement.y = rb.velocity.y;
         rb.velocity = movement;
     }
