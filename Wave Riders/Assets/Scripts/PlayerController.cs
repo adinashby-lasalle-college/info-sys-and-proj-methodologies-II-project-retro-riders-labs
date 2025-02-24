@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
         Debug.Log(GetTimeMultiplier());
 
         Vector3 movement;
-        movement = orientationCam.transform.forward * moveSpeed * GetTimeMultiplier() + orientationCam.transform.right * InputManager.movementInput.x * moveSpeed * 5;
+        movement = orientationCam.transform.forward * moveSpeed * GetTimeMultiplier() + orientationCam.transform.right * InputManager.movementInput.x * moveSpeed;
         movement.y = rb.velocity.y;
         rb.velocity = movement;
     }
@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
         float result;
         result = time / 10;
          
-
+        if(result < 1) { return 1; }
         return result;
     }
     private float CalculateTimePassed()
