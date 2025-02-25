@@ -33,6 +33,7 @@ public class InputManager : MonoBehaviour
 
     void OnEnable()
     {
+        //Add individual A and D inputs
         controls.Player.Move.performed += Move;
         controls.Player.Move.canceled += Move;
 
