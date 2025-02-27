@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     Rigidbody rb;
+    Vector3 playerPos;
+    Vector3 startingPos;
     [SerializeField] Transform orientationCam;
 
     [SerializeField] private int moveSpeed = 2;
@@ -12,21 +14,26 @@ public class PlayerController : MonoBehaviour
 
     private void OnEnable()
     {
-        //Enable any 1 time inputs
+        InputManager.OnLeftInput += MoveLeft;
+        InputManager.OnRightInput += MoveRight;
     }
 
     private void OnDisable()
     {
-        
+        InputManager.OnLeftInput -= MoveLeft;
+        InputManager.OnRightInput -= MoveRight;
     }
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        playerPos = rb.transform.position;
+        startingPos = rb.transform.position;
     }
 
     private void Update()
     {
+        playerPos = rb.transform.position;
         //Get player position and lock it horizontally to the map
         CalculateTimePassed();
         Debug.Log(GetTimeMultiplier());
@@ -49,5 +56,31 @@ public class PlayerController : MonoBehaviour
     {
         time = Time.time;
         return time;
+    }
+
+    private void MoveLeft()
+    {
+        if (playerPos.x - 10 < startingPos.x - 10)
+        {
+            return;
+        }
+        else
+        {
+            playerPos.x -= 10;
+            rb.MovePosition(playerPos);
+        }
+    }
+
+    private void MoveRight()
+    {
+        if(playerPos.x + 10 > startingPos.x + 10)
+        {
+            return;
+        }
+        else
+        {
+            playerPos.x += 10;
+            rb.MovePosition(playerPos);
+        }
     }
 }

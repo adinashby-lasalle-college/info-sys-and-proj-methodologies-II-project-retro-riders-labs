@@ -29,26 +29,18 @@ public class InputManager : MonoBehaviour
     #endregion
     public static PlayerControls controls;
 
-    public static Vector2 movementInput;
+    public static event System.Action OnLeftInput;
+    public static event System.Action OnRightInput;
 
     void OnEnable()
     {
         //Add individual A and D inputs
-        controls.Player.Move.performed += Move;
-        controls.Player.Move.canceled += Move;
+        controls.Player.Left.performed += ctx => OnLeftInput?.Invoke();
+        controls.Player.Right.performed += ctx => OnRightInput?.Invoke();
 
         controls.Player.Enable();
     }
 
-    void OnDisable()
-    {
-        controls.Player.Move.performed -= Move;
-        controls.Player.Move.canceled -= Move;
-    }
 
-    private void Move(InputAction.CallbackContext ctx)
-    {
-        movementInput = ctx.ReadValue<Vector2>();
-    }
 }
 
