@@ -1,0 +1,46 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.InputSystem;
+using System;
+
+public class InputManager : MonoBehaviour
+{
+    #region Singleton
+    public static InputManager Singleton;
+    /*
+    private void Start()
+    {
+        AudioManager.Singleton.PlaySoundEffect("Background Music");
+    }*/
+    public void Awake()
+    {
+        controls = new PlayerControls();
+        if (Singleton == null)
+        {
+            Singleton = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+    }
+    #endregion
+    public static PlayerControls controls;
+
+    public static event System.Action OnLeftInput;
+    public static event System.Action OnRightInput;
+
+    void OnEnable()
+    {
+        //Add individual A and D inputs
+        controls.Player.Left.performed += ctx => OnLeftInput?.Invoke();
+        controls.Player.Right.performed += ctx => OnRightInput?.Invoke();
+
+        controls.Player.Enable();
+    }
+
+
+}
+
