@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2558
     height: 1333
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -463,23 +463,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 10fbffff
+      m_SelectedIDs: e480ffff
+      m_LastClickedID: -32540
+      m_ExpandedIDs: d40effff9e17ffffae17ffffe480fffffc9fffff8ebcfffffebcffff00bdffffa8deffff9ee8ffff10fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: GreenBox(Clone)
+        m_OriginalName: GreenBox(Clone)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -34302
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -858,9 +858,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -73.312126, y: 14.552829, z: 118.790764}
+    m_Target: {x: -0.44752628, y: 9.971141, z: 0.054288503}
     speed: 2
-    m_Value: {x: -73.312126, y: 14.552829, z: 118.790764}
+    m_Value: {x: -0.44752628, y: 9.971141, z: 0.054288503}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -906,13 +906,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.055524617, y: -0.7153251, z: 0.0572071, w: -0.6941752}
+    m_Target: {x: 0.07005979, y: -0.7412594, z: 0.078353755, w: 0.6628389}
     speed: 2
-    m_Value: {x: -0.055526707, y: -0.715352, z: 0.057209253, w: -0.6942013}
+    m_Value: {x: 0.070064396, y: -0.74130815, z: 0.0783589, w: 0.66288245}
   m_Size:
-    m_Target: 13.104934
+    m_Target: 1.6727985
     speed: 2
-    m_Value: 13.104934
+    m_Value: 1.6727985
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1189,7 +1189,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 24042
+  m_LastSelectedObjectID: -32540
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
