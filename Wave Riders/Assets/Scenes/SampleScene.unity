@@ -1954,8 +1954,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 514899e03f5217646bd3dcdb3011dfbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartPos: {fileID: 1706368189}
-  Levels:
+  startPos: {fileID: 1706368189}
+  levels:
   - {fileID: 1966165092}
   - {fileID: 662162427}
   - {fileID: 867560632}

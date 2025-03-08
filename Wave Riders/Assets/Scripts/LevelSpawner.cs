@@ -4,15 +4,32 @@ using UnityEngine;
 
 public class LevelSpawner : MonoBehaviour
 {
-    [SerializeField] private Transform StartPos;
-    [SerializeField] private List<Level> Levels = new List<Level>();
+    [SerializeField] private Transform startPos;
+    [SerializeField] private List<Level> levels = new List<Level>();
 
+    GameObject tempLVL;
+    private Vector3 nextSpawn;
+    private Vector3 lvlLength;
+    private Quaternion spawnQ;
+
+
+    private void Awake()
+    {
+        nextSpawn = startPos.position;
+    }
     // Start is called before the first frame update
     void Start()
     {
-        GameObject tempOBJ;
-        tempOBJ = Instantiate(Levels[0].gameObject,StartPos);
-        Instantiate(Levels[1].gameObject, tempOBJ.GetComponent<Level>().EndCoords);
+        levels.Add(levels[0]);
+
+        tempLVL = Instantiate(levels[2].gameObject,startPos);
+        lvlLength = tempLVL.GetComponent<Level>().StartCoords.position - tempLVL.GetComponent<Level>().EndCoords.position;
+
+        for (int i = 0; i < levels.Count; i++)
+        {
+            nextSpawn += lvlLength;
+            tempLVL = Instantiate(levels[i].gameObject, nextSpawn, spawnQ);
+        }
     }
 
     // Update is called once per frame
