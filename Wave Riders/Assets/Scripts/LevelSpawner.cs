@@ -11,6 +11,7 @@ public class LevelSpawner : MonoBehaviour
     private Vector3 nextSpawn;
     private Vector3 lvlLength;
     private Quaternion spawnQ;
+    private int tempInt;
 
 
     private void Awake()
@@ -20,15 +21,13 @@ public class LevelSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        levels.Add(levels[0]);
-
-        tempLVL = Instantiate(levels[2].gameObject,startPos);
+        tempLVL = Instantiate(levels[GetRandomLevel()].gameObject,startPos);
         lvlLength = tempLVL.GetComponent<Level>().StartCoords.position - tempLVL.GetComponent<Level>().EndCoords.position;
 
-        for (int i = 0; i < levels.Count; i++)
+        foreach (Level lvl in levels)
         {
             nextSpawn += lvlLength;
-            tempLVL = Instantiate(levels[i].gameObject, nextSpawn, spawnQ);
+            tempLVL = Instantiate(levels[GetRandomLevel()].gameObject, nextSpawn, spawnQ);
         }
     }
 
@@ -36,5 +35,21 @@ public class LevelSpawner : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private int GetRandomLevel()
+    {
+        int lvlInt;
+        
+        do {
+            
+            System.Random rand = new System.Random();
+            lvlInt = rand.Next(0, levels.Count);
+
+        } while (lvlInt == tempInt);
+
+        tempInt = lvlInt;
+        return lvlInt;
+
     }
 }
