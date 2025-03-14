@@ -361,6 +361,7 @@
 "Assets/Input/PlayerControls.cs"
 "Assets/Scripts/AudioManager.cs"
 "Assets/Scripts/HealthSystem.cs"
+"Assets/Scripts/IChannel.cs"
 "Assets/Scripts/InputManager.cs"
 "Assets/Scripts/Level.cs"
 "Assets/Scripts/LevelSpawner.cs"

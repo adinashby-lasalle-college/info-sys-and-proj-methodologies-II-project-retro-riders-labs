@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\HealthSystem.cs" />
     <Compile Include="Assets\Input\PlayerControls.cs" />
+    <Compile Include="Assets\Scripts\IChannel.cs" />
     <Compile Include="Assets\Scripts\InputManager.cs" />
     <Compile Include="Assets\Scripts\Level.cs" />
     <Compile Include="Assets\Scripts\LevelSpawner.cs" />

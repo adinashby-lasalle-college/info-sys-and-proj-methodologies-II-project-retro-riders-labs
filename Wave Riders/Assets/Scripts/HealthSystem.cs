@@ -22,7 +22,10 @@ public class HealthSystem : MonoBehaviour
     #endregion
 
     [SerializeField] private int maxHealth;
-    public static int health;
+    private int health;
+
+    //Implementing List to announce health changes to any observers
+    private List<IChannel> listeners = new List<IChannel>();
     
     // Start is called before the first frame update
     void Start()
@@ -30,18 +33,29 @@ public class HealthSystem : MonoBehaviour
         health = maxHealth;
     }
 
-    // Update is called once per frame
-    void Update()
+    //setting up observers
+    public void AddObserver(IChannel channel)
     {
-        //update health UI
+        listeners.Add(channel);
+    }
+    public void RemoveObserver(IChannel channel)
+    {
+        listeners.Remove(channel);
     }
 
+    //Applying and Announcing and health changes
     public void applyDamage(int damage)
     {
         health -= damage;
-        if(health < 0)
+        if(health <= 0)
         {
+            health = 0;
             //Call death function;
         }
+        foreach (var channel in listeners)
+        {
+            channel.Update(health);
+        }
+
     }
 }
