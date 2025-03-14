@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IChannel
 {
-    void Update(int news);
+    void Updates(int news);
 }

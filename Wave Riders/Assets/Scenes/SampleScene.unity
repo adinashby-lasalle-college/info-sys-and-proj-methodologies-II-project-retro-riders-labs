@@ -256,6 +256,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 266321973}
+  - component: {fileID: 266321974}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -284,6 +285,20 @@ RectTransform:
   m_AnchoredPosition: {x: 179.96, y: 153.2}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &266321974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266321972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ad351aab6564f7469cad0a9f56e3057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthSlider: {fileID: 18267733}
+  easeHealthSlider: {fileID: 990840098}
 --- !u!1 &290323144
 GameObject:
   m_ObjectHideFlags: 0
@@ -695,7 +710,7 @@ GameObject:
   m_Component:
   - component: {fileID: 358773636}
   m_Layer: 0
-  m_Name: TetsLevelAssets
+  m_Name: TestLevelAssets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -21,7 +21,7 @@ public class HealthSystem : MonoBehaviour
     }
     #endregion
 
-    [SerializeField] private int maxHealth;
+    [SerializeField] public int maxHealth;
     private int health;
 
     //Implementing List to announce health changes to any observers
@@ -54,7 +54,7 @@ public class HealthSystem : MonoBehaviour
         }
         foreach (var channel in listeners)
         {
-            channel.Update(health);
+            channel.Updates(health);
         }
 
     }
