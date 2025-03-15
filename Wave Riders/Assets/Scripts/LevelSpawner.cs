@@ -31,11 +31,6 @@ public class LevelSpawner : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private int GetRandomLevel()
     {

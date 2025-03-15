@@ -13,14 +13,9 @@ public class Barricade : MonoBehaviour, IObstacle
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void Collide()
     {
         HealthSystem.Singleton.applyDamage(15);
+        Destroy(this.gameObject);
     }
 }
