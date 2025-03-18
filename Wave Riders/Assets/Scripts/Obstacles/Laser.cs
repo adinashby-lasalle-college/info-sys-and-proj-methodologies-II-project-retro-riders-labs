@@ -15,6 +15,6 @@ public class Laser : MonoBehaviour, IObstacle
 
     public void Collide()
     {
-        HealthSystem.Singleton.applyDamage(15);
+        HealthSystem.Singleton.applyDamage(50);
     }
 }

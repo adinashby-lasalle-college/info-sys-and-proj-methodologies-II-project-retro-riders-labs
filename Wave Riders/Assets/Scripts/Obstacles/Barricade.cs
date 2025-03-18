@@ -15,7 +15,7 @@ public class Barricade : MonoBehaviour, IObstacle
 
     public void Collide()
     {
-        HealthSystem.Singleton.applyDamage(15);
+        HealthSystem.Singleton.applyDamage(20);
         Destroy(this.gameObject);
     }
 }
