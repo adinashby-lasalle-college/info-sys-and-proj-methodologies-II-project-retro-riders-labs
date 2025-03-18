@@ -26,7 +26,7 @@ public class LevelSpawner : MonoBehaviour
 
         foreach (Level lvl in levels)
         {
-            nextSpawn += lvlLength;
+            nextSpawn -= lvlLength;
             tempLVL = Instantiate(levels[GetRandomLevel()].gameObject, nextSpawn, spawnQ);
         }
     }
