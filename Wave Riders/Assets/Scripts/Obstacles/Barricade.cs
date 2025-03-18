@@ -17,5 +17,6 @@ public class Barricade : MonoBehaviour, IObstacle
     {
         HealthSystem.Singleton.applyDamage(20);
         Destroy(this.gameObject);
+        AudioManager.instance.PlaySFX("WallBreak");
     }
 }

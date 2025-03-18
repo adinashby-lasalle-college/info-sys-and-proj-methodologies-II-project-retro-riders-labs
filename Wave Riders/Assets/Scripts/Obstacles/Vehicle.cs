@@ -17,5 +17,6 @@ public class Vehicle : MonoBehaviour, IObstacle
     {
         HealthSystem.Singleton.applyDamage(15);
         Destroy(this.gameObject);
+        AudioManager.instance.PlaySFX("CarCrash");
     }
 }

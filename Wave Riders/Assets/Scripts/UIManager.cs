@@ -29,6 +29,7 @@ public class UIManager : MonoBehaviour
         HUDCanvas.SetActive(false);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        AudioManager.instance.PauseMusic(true);
     }
 
     public void ResumeGame()
@@ -37,5 +38,6 @@ public class UIManager : MonoBehaviour
         HUDCanvas.SetActive(true);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        AudioManager.instance.PauseMusic(false);
     }
 }

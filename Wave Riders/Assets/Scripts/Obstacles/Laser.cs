@@ -16,5 +16,6 @@ public class Laser : MonoBehaviour, IObstacle
     public void Collide()
     {
         HealthSystem.Singleton.applyDamage(50);
+        AudioManager.instance.PlaySFX("Laser");
     }
 }

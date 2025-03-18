@@ -38,6 +38,19 @@ public class AudioManager : MonoBehaviour
         musicSource.Play();
     }
 
+    public void PauseMusic(bool pause)
+    {
+        if (pause)
+        {
+            musicSource.Pause();
+        }
+        else
+        {
+            musicSource.Play();
+        }
+    }
+    
+
     public void PlaySFX(string name)
     {
         Sound sound = Array.Find(sfxSounds, sound => sound.name == name);
