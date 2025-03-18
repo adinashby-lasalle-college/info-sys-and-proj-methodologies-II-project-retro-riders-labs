@@ -1,18 +1,51 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using Cinemachine;
 
 public class PauseMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private GameObject pauseCanvas;
+    [SerializeField] private PlayerController player;
+    private void OnEnable()
     {
-        
+        InputManager.OnPauseInput += Pause;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDisable()
     {
-        
+        InputManager.OnPauseInput -= Pause;
+    }
+
+    private void Start()
+    {
+        pauseCanvas.SetActive(false);
+    }
+
+    public void Pause()
+    {
+        pauseCanvas.SetActive(!pauseCanvas.activeSelf);
+
+        if (pauseCanvas.activeSelf)
+        {
+            UIManager.Singleton.PauseGame();
+        }
+        else
+        {
+            UIManager.Singleton.ResumeGame();
+        }
+    }
+
+    public void GoToMainMenu(int sceneIndex)
+    {
+        pauseCanvas.SetActive(false);
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(sceneIndex);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }

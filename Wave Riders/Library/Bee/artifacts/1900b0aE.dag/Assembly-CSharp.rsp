@@ -374,6 +374,7 @@
 "Assets/Scripts/Scene Manager/PauseMenu.cs"
 "Assets/Scripts/Scene Manager/SceneSwitcher.cs"
 "Assets/Scripts/Sound.cs"
+"Assets/Scripts/UIManager.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"

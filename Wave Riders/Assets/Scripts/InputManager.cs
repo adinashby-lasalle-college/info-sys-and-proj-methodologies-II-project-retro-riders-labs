@@ -31,12 +31,14 @@ public class InputManager : MonoBehaviour
 
     public static event System.Action OnLeftInput;
     public static event System.Action OnRightInput;
+    public static event System.Action OnPauseInput;
 
     void OnEnable()
     {
         //Add individual A and D inputs
         controls.Player.Left.performed += ctx => OnLeftInput?.Invoke();
         controls.Player.Right.performed += ctx => OnRightInput?.Invoke();
+        controls.Player.Pause.performed += ctx => OnPauseInput?.Invoke();
 
         controls.Player.Enable();
     }
