@@ -6,13 +6,14 @@ public class LevelSpawner : MonoBehaviour
 {
     [SerializeField] private Transform startPos;
     [SerializeField] private List<Level> levels = new List<Level>();
+    [SerializeField] private int LvlLength;
 
     GameObject tempLVL;
     private Vector3 nextSpawn;
-    private Vector3 lvlLength;
+    private Vector3 blockLength;
     private Quaternion spawnQ;
     private int tempInt;
-
+    
 
     private void Awake()
     {
@@ -22,11 +23,11 @@ public class LevelSpawner : MonoBehaviour
     void Start()
     {
         tempLVL = Instantiate(levels[GetRandomLevel()].gameObject,startPos);
-        lvlLength = tempLVL.GetComponent<Level>().StartCoords.position - tempLVL.GetComponent<Level>().EndCoords.position;
+        blockLength = tempLVL.GetComponent<Level>().StartCoords.position - tempLVL.GetComponent<Level>().EndCoords.position;
 
-        foreach (Level lvl in levels)
+        for(int i = 0; i < LvlLength; i++)
         {
-            nextSpawn -= lvlLength;
+            nextSpawn -= blockLength;
             tempLVL = Instantiate(levels[GetRandomLevel()].gameObject, nextSpawn, spawnQ);
         }
     }

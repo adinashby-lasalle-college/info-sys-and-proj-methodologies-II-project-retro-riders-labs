@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
 
     private void MoveLeft()
     {
-        if (playerPos.x - 10 < startingPos.x - 10)
+        if (playerPos.x - 10 < startingPos.x - 12)
         {
             return;
         }
@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour
 
     private void MoveRight()
     {
-        if(playerPos.x + 10 > startingPos.x + 10)
+        if(playerPos.x + 10 > startingPos.x + 12)
         {
             return;
         }
