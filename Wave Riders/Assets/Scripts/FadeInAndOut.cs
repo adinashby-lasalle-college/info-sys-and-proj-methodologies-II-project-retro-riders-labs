@@ -7,7 +7,7 @@ public class FadeInAndOut : MonoBehaviour
     public static void Fade(GameObject canvas, int TimeToFade)
     {
         CanvasGroup tempCanvas = canvas.GetComponent<CanvasGroup>();
-
+        /*
         Debug.Log(tempCanvas.gameObject.name);
 
         do
@@ -23,6 +23,7 @@ public class FadeInAndOut : MonoBehaviour
         {
             tempCanvas.alpha -= TimeToFade * Time.deltaTime;
 
-        } while (tempCanvas.alpha > 0);
+        } while (tempCanvas.alpha > 0);*/
     }
+
 }
