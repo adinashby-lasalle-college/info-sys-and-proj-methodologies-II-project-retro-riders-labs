@@ -15,7 +15,7 @@ C:/Users/Diego Arriaga/Documents/GitHub/RetroRider/Wave Riders
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-63539
+59938
 Successfully changed project path to: C:/Users/Diego Arriaga/Documents/GitHub/RetroRider/Wave Riders
 C:/Users/Diego Arriaga/Documents/GitHub/RetroRider/Wave Riders
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/Diego Arriaga/Documents/GitHub/RetroRider/Wave Riders
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [30044] Host "[IP] 192.168.0.102 [Port] 0 [Flags] 2 [Guid] 1559325477 [EditorId] 1559325477 [Version] 1048832 [Id] WindowsEditor(7,Monster) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [52980] Host "[IP] 192.168.0.102 [Port] 0 [Flags] 2 [Guid] 259605458 [EditorId] 259605458 [Version] 1048832 [Id] WindowsEditor(7,Monster) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [30044] Host "[IP] 192.168.0.102 [Port] 0 [Flags] 2 [Guid] 1559325477 [EditorId] 1559325477 [Version] 1048832 [Id] WindowsEditor(7,Monster) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [52980] Host "[IP] 192.168.0.102 [Port] 0 [Flags] 2 [Guid] 259605458 [EditorId] 259605458 [Version] 1048832 [Id] WindowsEditor(7,Monster) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 31 workers.
-Refreshing native plugins compatible for Editor in 6.67 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 9.31 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.8f1 (b5eafc012955)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Resources/UnitySubsystems
@@ -70,44 +70,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56720
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56600
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006020 seconds.
-- Loaded All Assemblies, in  0.221 seconds
+Registered in 0.006926 seconds.
+- Loaded All Assemblies, in  0.241 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.157 seconds
-Domain Reload Profiling: 376ms
-	BeginReloadAssembly (74ms)
+- Finished resetting the current domain, in  0.155 seconds
+Domain Reload Profiling: 393ms
+	BeginReloadAssembly (79ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (20ms)
+	RebuildCommonClasses (21ms)
 	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (38ms)
-	LoadAllAssembliesAndSetupDomain (79ms)
-		LoadAssemblies (72ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (89ms)
+		LoadAssemblies (76ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (78ms)
-			TypeCache.Refresh (77ms)
-				TypeCache.ScanAssembly (69ms)
+		AnalyzeDomain (87ms)
+			TypeCache.Refresh (86ms)
+				TypeCache.ScanAssembly (77ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (157ms)
+	FinalizeReload (156ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (122ms)
+		SetupLoadedEditorAssemblies (120ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
+			InitializePlatformSupportModulesInManaged (6ms)
 			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (77ms)
-			ProcessInitializeOnLoadMethodAttributes (32ms)
+			ProcessInitializeOnLoadAttributes (78ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -115,82 +115,52 @@ Domain Reload Profiling: 376ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.573 seconds
-Refreshing native plugins compatible for Editor in 3.01 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.452 seconds
+Refreshing native plugins compatible for Editor in 3.17 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.416 seconds
-Domain Reload Profiling: 986ms
-	BeginReloadAssembly (99ms)
+- Finished resetting the current domain, in  0.412 seconds
+Domain Reload Profiling: 860ms
+	BeginReloadAssembly (105ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (18ms)
-	RebuildCommonClasses (22ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (20ms)
 	RebuildNativeTypeToScriptingClass (7ms)
 	initialDomainReloadingComplete (29ms)
-	LoadAllAssembliesAndSetupDomain (413ms)
-		LoadAssemblies (327ms)
+	LoadAllAssembliesAndSetupDomain (287ms)
+		LoadAssemblies (232ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (142ms)
-			TypeCache.Refresh (127ms)
-				TypeCache.ScanAssembly (117ms)
+		AnalyzeDomain (115ms)
+			TypeCache.Refresh (101ms)
+				TypeCache.ScanAssembly (91ms)
 			ScanForSourceGeneratedMonoScriptInfo (10ms)
 			ResolveRequiredComponents (3ms)
-	FinalizeReload (416ms)
+	FinalizeReload (413ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (328ms)
+		SetupLoadedEditorAssemblies (324ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
+			InitializePlatformSupportModulesInManaged (4ms)
 			SetLoadedEditorAssemblies (2ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (44ms)
-			ProcessInitializeOnLoadAttributes (260ms)
-			ProcessInitializeOnLoadMethodAttributes (11ms)
+			BeforeProcessingInitializeOnLoad (42ms)
+			ProcessInitializeOnLoadAttributes (256ms)
+			ProcessInitializeOnLoadMethodAttributes (12ms)
 			AfterProcessingInitializeOnLoad (7ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (4ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 3.37 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 3.72 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3710 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 49 unused Assets / (130.5 KB). Loaded Objects now: 4176.
 Memory consumption went from 132.8 MB to 132.6 MB.
-Total: 2.690400 ms (FindLiveObjects: 0.262900 ms CreateObjectMapping: 0.054900 ms MarkObjects: 2.267100 ms  DeleteObjects: 0.105000 ms)
+Total: 3.138200 ms (FindLiveObjects: 0.236800 ms CreateObjectMapping: 0.062700 ms MarkObjects: 2.716200 ms  DeleteObjects: 0.121700 ms)
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 99895.372557 seconds.
-  path: Assets/Prefabs/PBarricadeV1.prefab
-  artifactKey: Guid(df8046ecad8ba9d478afa46a1efab430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PBarricadeV1.prefab using Guid(df8046ecad8ba9d478afa46a1efab430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aade9329f15590a20c3a5f9467ec311') in 0.074029 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 26
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 3.16 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 2 unused Assets / (74.3 KB). Loaded Objects now: 4185.
-Memory consumption went from 75.6 MB to 75.6 MB.
-Total: 2.929200 ms (FindLiveObjects: 0.257900 ms CreateObjectMapping: 0.060600 ms MarkObjects: 2.583500 ms  DeleteObjects: 0.026700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
@@ -207,86 +177,9 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 130.156069 seconds.
-  path: Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/details_baseColor.jpg
-  artifactKey: Guid(a047c383e310dee48bb0219e5490c0af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/details_baseColor.jpg using Guid(a047c383e310dee48bb0219e5490c0af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0149c894ddf01a5d54051a58b99b9b49') in 0.017334 seconds
+  Time since last request: 239614.188373 seconds.
+  path: Assets/Assets/RetroSunBackground.png
+  artifactKey: Guid(1f41149844689a04a8ab662698a401d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/RetroSunBackground.png using Guid(1f41149844689a04a8ab662698a401d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9761c34d2adfb188107f40754304bee2') in 0.034682 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/details_normal.jpg
-  artifactKey: Guid(9f50ae486dd2d0e4e8f3b02398cddad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/details_normal.jpg using Guid(9f50ae486dd2d0e4e8f3b02398cddad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdcf27ce88b80f5f945de58d1df57334') in 0.011700 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/glass_baseColor.jpg
-  artifactKey: Guid(30a9e7780d8d729468290719b10a2027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/glass_baseColor.jpg using Guid(30a9e7780d8d729468290719b10a2027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46c922cbbbd8a79d1e026a93cf1068a0') in 0.012287 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/material_8_baseColor.jpg
-  artifactKey: Guid(28b4768c8d4d1b94da2b53fa9046072d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/material_8_baseColor.jpg using Guid(28b4768c8d4d1b94da2b53fa9046072d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c24d8f17a8aaa471d3693e9b398abf3') in 0.011977 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000008 seconds.
-  path: Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/glass_metallicRoughness_rough_scale1.jpg
-  artifactKey: Guid(6e39a773841119849bb2433cbf62e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/glass_metallicRoughness_rough_scale1.jpg using Guid(6e39a773841119849bb2433cbf62e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7387c5eb44e9da8884077bff91e951cb') in 0.015893 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/mountains_baseColor.jpg
-  artifactKey: Guid(02f5a8382acf4d54990563d7a6360392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/mountains_baseColor.jpg using Guid(02f5a8382acf4d54990563d7a6360392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ef2ff07424723941ec6e26507b4cf35') in 0.012098 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/glass_metallicRoughness_metal_scale0.jpg
-  artifactKey: Guid(00a7e883d7dacd2498dd50361932eab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/glass_metallicRoughness_metal_scale0.jpg using Guid(00a7e883d7dacd2498dd50361932eab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '171eb1e3bcf1b598487b245a1c70f8c8') in 0.014408 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/wheels_baseColor.jpg
-  artifactKey: Guid(59c4e3184825c7448a76046b1ff07786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/wheels_baseColor.jpg using Guid(59c4e3184825c7448a76046b1ff07786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6283489de4ff00271a6ef2897b4f28d3') in 0.010241 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/details_emissive.jpg
-  artifactKey: Guid(7c3375bd81954f24da37a8a607de4e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/details_emissive.jpg using Guid(7c3375bd81954f24da37a8a607de4e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61afbd15e1ef30e978a348d8e7613545') in 0.013774 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/sphere_emissive.jpg
-  artifactKey: Guid(babb8c9c99c06b94bb58144ab672449c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/sphere_emissive.jpg using Guid(babb8c9c99c06b94bb58144ab672449c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88fe1d4fc7ab1a86d4fdb63af38796d7') in 0.014814 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0

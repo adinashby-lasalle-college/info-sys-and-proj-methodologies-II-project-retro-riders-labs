@@ -1,0 +1,340 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.8f1 (b5eafc012955) revision 11922172'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'en' Physical Memory: 31863 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/Diego Arriaga/Documents/GitHub/RetroRider/Wave Riders
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+63539
+Successfully changed project path to: C:/Users/Diego Arriaga/Documents/GitHub/RetroRider/Wave Riders
+C:/Users/Diego Arriaga/Documents/GitHub/RetroRider/Wave Riders
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [45872] Host "[IP] 192.168.0.102 [Port] 0 [Flags] 2 [Guid] 2278149073 [EditorId] 2278149073 [Version] 1048832 [Id] WindowsEditor(7,Monster) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [45872] Host "[IP] 192.168.0.102 [Port] 0 [Flags] 2 [Guid] 2278149073 [EditorId] 2278149073 [Version] 1048832 [Id] WindowsEditor(7,Monster) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 31 workers.
+Refreshing native plugins compatible for Editor in 6.96 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.8f1 (b5eafc012955)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Diego Arriaga/Documents/GitHub/RetroRider/Wave Riders/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4090 (ID=0x2684)
+    Vendor:   NVIDIA
+    VRAM:     24142 MB
+    Driver:   32.0.15.6094
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56252
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005642 seconds.
+- Loaded All Assemblies, in  0.216 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.152 seconds
+Domain Reload Profiling: 367ms
+	BeginReloadAssembly (68ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (80ms)
+		LoadAssemblies (66ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (78ms)
+			TypeCache.Refresh (77ms)
+				TypeCache.ScanAssembly (69ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (153ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (116ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (1ms)
+			ProcessInitializeOnLoadAttributes (75ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.560 seconds
+Refreshing native plugins compatible for Editor in 4.19 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.411 seconds
+Domain Reload Profiling: 968ms
+	BeginReloadAssembly (99ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (401ms)
+		LoadAssemblies (324ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (131ms)
+			TypeCache.Refresh (117ms)
+				TypeCache.ScanAssembly (104ms)
+			ScanForSourceGeneratedMonoScriptInfo (11ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (411ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (320ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (42ms)
+			ProcessInitializeOnLoadAttributes (253ms)
+			ProcessInitializeOnLoadMethodAttributes (11ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 3.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3710 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (130.5 KB). Loaded Objects now: 4176.
+Memory consumption went from 132.8 MB to 132.6 MB.
+Total: 3.356900 ms (FindLiveObjects: 0.303900 ms CreateObjectMapping: 0.114400 ms MarkObjects: 2.802800 ms  DeleteObjects: 0.134800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 99895.357796 seconds.
+  path: Assets/Prefabs/PLaserGate.prefab
+  artifactKey: Guid(1e3c07ccc0c11c6449b8fc369078f372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PLaserGate.prefab using Guid(1e3c07ccc0c11c6449b8fc369078f372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '353202dba42b6f1f9d736eb01f96a4a1') in 0.068360 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 76
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Prefabs/PTruck.prefab
+  artifactKey: Guid(700649bec3b2f694cbc6011bb877d665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PTruck.prefab using Guid(700649bec3b2f694cbc6011bb877d665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58077535fcecb07e48a1cda2204d0f34') in 0.011388 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 107
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Prefabs/P_Police Car.prefab
+  artifactKey: Guid(6f738cbdaa1f6d446b095da1d7c36699) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/P_Police Car.prefab using Guid(6f738cbdaa1f6d446b095da1d7c36699) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbe168f47f3312739145f70a0114a563') in 0.006548 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.91 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2 unused Assets / (74.3 KB). Loaded Objects now: 4185.
+Memory consumption went from 75.6 MB to 75.6 MB.
+Total: 3.376300 ms (FindLiveObjects: 0.459200 ms CreateObjectMapping: 0.085900 ms MarkObjects: 2.795700 ms  DeleteObjects: 0.034900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 24.161656 seconds.
+  path: Assets/Prefabs/DeLorean_DMC12__Retro_wave_art.usdz
+  artifactKey: Guid(f46b9c3fd330c5b4992eda2491e60e05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DeLorean_DMC12__Retro_wave_art.usdz using Guid(f46b9c3fd330c5b4992eda2491e60e05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75a0088c8a3eb7bca9f9b10ac98c7c8b') in 0.001773 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 104.095091 seconds.
+  path: Assets/Prefabs/DeLorean_DMC12__Retro_wave_art
+  artifactKey: Guid(25783a362278eb94e87b7bd92b877da6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DeLorean_DMC12__Retro_wave_art using Guid(25783a362278eb94e87b7bd92b877da6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f9d1d2216ad2dae7014856caec016f6') in 0.000534 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.298857 seconds.
+  path: Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/scene.usdc
+  artifactKey: Guid(1ea1a1b4909d534428e51e284cfd7d35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/scene.usdc using Guid(1ea1a1b4909d534428e51e284cfd7d35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a99d21e8ed6aca26ec38b74284808c9') in 0.000732 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.517857 seconds.
+  path: Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0
+  artifactKey: Guid(f59a79baf4141694a9c1e494d063e067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0 using Guid(f59a79baf4141694a9c1e494d063e067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a013a70cf4e361e320318e398a4354b') in 0.000585 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.077246 seconds.
+  path: Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/base_baseColor.jpg
+  artifactKey: Guid(adaad0f3d615f424fad2847576fa684f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/base_baseColor.jpg using Guid(adaad0f3d615f424fad2847576fa684f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff8b46c033fd90d47de6251fb233c037') in 0.016763 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000865 seconds.
+  path: Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/details_metallicRoughness_metal.jpg
+  artifactKey: Guid(f44dc002b202cbc4da175b1a31406e22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/details_metallicRoughness_metal.jpg using Guid(f44dc002b202cbc4da175b1a31406e22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1da500831ffe95c997483ad222f6cac4') in 0.011583 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/mountains_emissive.jpg
+  artifactKey: Guid(a7f2ee6c48b250b4abc547f4672dd4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/mountains_emissive.jpg using Guid(a7f2ee6c48b250b4abc547f4672dd4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f42c53c6efe4df6a61ad243a37412c79') in 0.012089 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/details_metallicRoughness_rough.jpg
+  artifactKey: Guid(80d2da702e2fcb442933f524bb439da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/details_metallicRoughness_rough.jpg using Guid(80d2da702e2fcb442933f524bb439da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31230d03a413759b397969d41bfea3c7') in 0.011227 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/material_8_emissive.jpg
+  artifactKey: Guid(2ab3d71d4e8c5e1429c6d576909c2a03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/material_8_emissive.jpg using Guid(2ab3d71d4e8c5e1429c6d576909c2a03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af4e7b97b7e75ac52bd29ae668e7214e') in 0.014911 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/wheels_metallicRoughness_rough_scale2.jpg
+  artifactKey: Guid(d1bbe6fdf51e0154c9e414446c5f0dfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/wheels_metallicRoughness_rough_scale2.jpg using Guid(d1bbe6fdf51e0154c9e414446c5f0dfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5271cf3b1b8bf086e1d951f71e39e41a') in 0.013816 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/sphere_baseColor.jpg
+  artifactKey: Guid(4c0d29fa6bb966a478e2f76cc363a9c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/sphere_baseColor.jpg using Guid(4c0d29fa6bb966a478e2f76cc363a9c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81f29751590c20d629f417b10f386816') in 0.014440 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/wheels_metallicRoughness_metal.jpg
+  artifactKey: Guid(8d1fdad554a407741b2c5586b344579a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/wheels_metallicRoughness_metal.jpg using Guid(8d1fdad554a407741b2c5586b344579a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6709951792603a45974f0cd4bbef3021') in 0.012323 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/wheels_normal.jpg
+  artifactKey: Guid(30af8d7c382a22448a3297b9a0f15b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/wheels_normal.jpg using Guid(30af8d7c382a22448a3297b9a0f15b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c742a49494a0d4c3efb96ded84f01a89') in 0.014223 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000008 seconds.
+  path: Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/material_baseColor.png
+  artifactKey: Guid(979a7927814b5184c918f5997ebd1767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DeLorean_DMC12__Retro_wave_art/0/material_baseColor.png using Guid(979a7927814b5184c918f5997ebd1767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fca149f6b22644de476b6d8068287dc4') in 0.011445 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
