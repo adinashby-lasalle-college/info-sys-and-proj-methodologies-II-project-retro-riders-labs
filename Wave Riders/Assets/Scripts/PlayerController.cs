@@ -7,9 +7,9 @@ public class PlayerController : MonoBehaviour, IChannel
     Rigidbody rb;
     Vector3 playerPos;
     Vector3 startingPos;
-    [SerializeField] Transform orientationCam;
+    [SerializeField] public Transform orientationCam;
 
-    [SerializeField] private int moveSpeed = 2;
+    [SerializeField] public int moveSpeed = 2;
     float time;
 
     private void OnEnable()
@@ -49,8 +49,8 @@ public class PlayerController : MonoBehaviour, IChannel
     {
         if (health <= 50)
         {
-            moveSpeed /= 2;
-            Invoke("changeMoveSpeed",2);
+            //moveSpeed /= 2;
+            //Invoke("changeMoveSpeed",2);
         }
     }
 

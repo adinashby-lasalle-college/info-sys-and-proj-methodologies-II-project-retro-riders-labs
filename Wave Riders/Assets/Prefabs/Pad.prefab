@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3454219513856943949}
   - component: {fileID: 8411632238524339346}
   - component: {fileID: 2780406294581565715}
+  - component: {fileID: 3893571991673465485}
   m_Layer: 0
   m_Name: Pad
   m_TagString: Untagged
@@ -103,12 +104,25 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.055178616, y: 0.024176698, z: 0.0005202627}
   m_Center: {x: -0.0005638641, y: 0.015198323, z: -0.0015822196}
+--- !u!114 &3893571991673465485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895052875306808007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 375a84373dd0bcc40bcce3b4066f363c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceMultiplier: 1.5
 --- !u!1 &2165585045662222854
 GameObject:
   m_ObjectHideFlags: 0

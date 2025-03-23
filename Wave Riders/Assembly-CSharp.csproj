@@ -114,6 +114,7 @@
     <Compile Include="Assets\Scripts\Interfaces\IObstacle.cs" />
     <Compile Include="Assets\Scripts\Level\Level.cs" />
     <Compile Include="Assets\Scripts\Obstacles\Barricade.cs" />
+    <Compile Include="Assets\Scripts\Obstacles\SpeedBoost.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\Scripts\HUD.cs" />
   </ItemGroup>

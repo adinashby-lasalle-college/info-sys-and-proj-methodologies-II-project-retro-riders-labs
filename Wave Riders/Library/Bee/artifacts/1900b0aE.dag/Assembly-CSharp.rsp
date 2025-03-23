@@ -376,6 +376,7 @@
 "Assets/Scripts/LevelSpawner.cs"
 "Assets/Scripts/Obstacles/Barricade.cs"
 "Assets/Scripts/Obstacles/Laser.cs"
+"Assets/Scripts/Obstacles/SpeedBoost.cs"
 "Assets/Scripts/Obstacles/Vehicle.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/Scene Manager/PauseMenu.cs"
