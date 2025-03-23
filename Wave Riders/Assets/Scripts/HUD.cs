@@ -4,18 +4,39 @@ using UnityEngine;
 
 public class HUD : MonoBehaviour, IChannel
 {
-    [SerializeField] private GameObject DamageEffect;
-    [SerializeField] private int TimeToFade;
+    [SerializeField] private CanvasGroup DamageEffect;
+    [SerializeField] private float TimeToFade;
 
     // Start is called before the first frame update
     void Start()
     {
         HealthSystem.Singleton.AddObserver(this);
-        DamageEffect.GetComponent<CanvasGroup>().alpha = 0;
+        DamageEffect.alpha = 0;
     }
 
     public void Updates(int newHealth)
     {
-        FadeInAndOut.Fade(DamageEffect, TimeToFade);
+        FadeIn();
+        Invoke("FadeOut",2);
+    }
+
+    private void FadeIn()
+    {
+        do
+        {
+            DamageEffect.alpha += TimeToFade * Time.deltaTime;
+
+        } while (DamageEffect.alpha < 1);
+    }
+
+    private void FadeOut()
+    {
+        TimeToFade *= 2;
+
+        do
+        {
+            DamageEffect.alpha -= TimeToFade * Time.deltaTime;
+
+        } while (DamageEffect.alpha > 0);
     }
 }

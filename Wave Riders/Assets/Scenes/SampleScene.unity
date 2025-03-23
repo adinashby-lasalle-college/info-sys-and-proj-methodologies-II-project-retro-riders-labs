@@ -2642,8 +2642,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a96e446daf3e1647954b02f63b73e8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DamageEffect: {fileID: 945501390}
-  TimeToFade: 1000
+  DamageEffect: {fileID: 945501394}
+  TimeToFade: 0.00001
 --- !u!1 &1649110674
 GameObject:
   m_ObjectHideFlags: 0

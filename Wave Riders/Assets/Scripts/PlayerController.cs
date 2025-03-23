@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, IChannel
 {
     Rigidbody rb;
     Vector3 playerPos;
@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         playerPos = rb.transform.position;
         startingPos = rb.transform.position;
+        HealthSystem.Singleton.AddObserver(this);
     }
 
     private void Update()
@@ -42,6 +43,15 @@ public class PlayerController : MonoBehaviour
         movement = orientationCam.transform.forward * moveSpeed * GetTimeMultiplier();// + orientationCam.transform.right * InputManager.movementInput.x * moveSpeed;
         movement.y = rb.velocity.y;
         rb.velocity = movement;
+    }
+
+    public void Updates(int health)
+    {
+        if (health <= 50)
+        {
+            moveSpeed /= 2;
+            Invoke("changeMoveSpeed",2);
+        }
     }
 
     private float GetTimeMultiplier()
@@ -82,5 +92,10 @@ public class PlayerController : MonoBehaviour
             playerPos.x += 10;
             rb.MovePosition(playerPos);
         }
+    }
+
+    private void changeMoveSpeed()
+    {
+        moveSpeed *= 2;
     }
 }
