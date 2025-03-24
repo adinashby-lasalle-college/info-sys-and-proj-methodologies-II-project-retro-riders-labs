@@ -16,27 +16,7 @@ public class HUD : MonoBehaviour, IChannel
 
     public void Updates(int newHealth)
     {
-        FadeIn();
-        Invoke("FadeOut",2);
+        DamageEffect.GetComponent<Animator>().Play("DamageEffect");
     }
 
-    private void FadeIn()
-    {
-        do
-        {
-            DamageEffect.alpha += TimeToFade * Time.deltaTime;
-
-        } while (DamageEffect.alpha < 1);
-    }
-
-    private void FadeOut()
-    {
-        TimeToFade *= 2;
-
-        do
-        {
-            DamageEffect.alpha -= TimeToFade * Time.deltaTime;
-
-        } while (DamageEffect.alpha > 0);
-    }
 }

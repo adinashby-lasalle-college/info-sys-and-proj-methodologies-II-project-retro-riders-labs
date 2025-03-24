@@ -37,7 +37,6 @@ public class PlayerController : MonoBehaviour, IChannel
         playerPos = rb.transform.position;
         //Get player position and lock it horizontally to the map
         CalculateTimePassed();
-        Debug.Log(GetTimeMultiplier());
 
         Vector3 movement;
         movement = orientationCam.transform.forward * moveSpeed * GetTimeMultiplier();// + orientationCam.transform.right * InputManager.movementInput.x * moveSpeed;

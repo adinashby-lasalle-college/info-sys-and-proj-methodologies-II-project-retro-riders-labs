@@ -10,9 +10,9 @@ public class SpeedBoost : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Vector3 playerForward = other.GetComponent<PlayerController>().orientationCam.transform.forward;
+            Debug.Log("Boosted");
+            Vector3 playerForward = other.GetComponentInParent<PlayerController>().orientationCam.transform.forward;
             other.GetComponentInParent<Rigidbody>().AddForce(playerForward * forceMultiplier, ForceMode.Impulse);
-            Debug.Log(other.GetComponentInParent<Rigidbody>().gameObject.name);
         }
     }
 }
