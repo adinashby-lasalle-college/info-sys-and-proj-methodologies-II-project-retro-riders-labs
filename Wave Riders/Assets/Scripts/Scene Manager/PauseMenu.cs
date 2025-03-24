@@ -37,7 +37,7 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    public void GoToMainMenu(int sceneIndex)
+    public void GoToScene(int sceneIndex)
     {
         pauseCanvas.SetActive(false);
         Time.timeScale = 1f;

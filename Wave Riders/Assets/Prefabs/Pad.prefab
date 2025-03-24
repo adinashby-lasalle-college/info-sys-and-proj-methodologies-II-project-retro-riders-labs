@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8411632238524339346}
   - component: {fileID: 2780406294581565715}
   - component: {fileID: 3893571991673465485}
+  - component: {fileID: -6436362672883862569}
   m_Layer: 0
   m_Name: Pad
   m_TagString: Untagged
@@ -108,8 +109,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.055178616, y: 0.024176698, z: 0.0005202627}
-  m_Center: {x: -0.0005638641, y: 0.015198323, z: -0.0015822196}
+  m_Size: {x: 0.055178724, y: 0.024176713, z: 0.004847712}
+  m_Center: {x: -0.0005638638, y: 0.01519833, z: 0.0005814941}
 --- !u!114 &3893571991673465485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,6 +124,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forceMultiplier: 1.5
+--- !u!64 &-6436362672883862569
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895052875306808007}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6994934831067890684, guid: e08a828172b0b06499394de54647a73d, type: 3}
 --- !u!1 &2165585045662222854
 GameObject:
   m_ObjectHideFlags: 0
