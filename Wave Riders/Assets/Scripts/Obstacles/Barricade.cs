@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Barricade : MonoBehaviour, IObstacle
 {
+    [SerializeField] private GameObject BreakableBarricade;
+    private Quaternion spawnQ;
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
@@ -16,7 +18,12 @@ public class Barricade : MonoBehaviour, IObstacle
     public void Collide()
     {
         HealthSystem.Singleton.applyDamage(20);
-        //Destroy(this.gameObject);
+        Transform coords = this.gameObject.transform;
+        //Transform Pivot is off center so must adjust transform spawn
+        coords.position = new Vector3(coords.position.x, coords.position.y - (float)12.99, coords.position.z - (float)2.24);
+        Destroy(this.gameObject);
+        Instantiate(BreakableBarricade, coords.position,coords.rotation);
         AudioManager.instance.PlaySFX("WallBreak");
+
     }
 }
