@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour, IChannel
         CalculateTimePassed();
 
         Vector3 movement;
-        movement = orientationCam.transform.forward * moveSpeed * GetTimeMultiplier();// + orientationCam.transform.right * InputManager.movementInput.x * moveSpeed;
+        movement = orientationCam.transform.forward * moveSpeed * GetTimeMultiplier();
         movement.y = rb.velocity.y;
         rb.velocity = movement;
     }

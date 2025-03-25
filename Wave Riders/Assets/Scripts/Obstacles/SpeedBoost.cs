@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class SpeedBoost : MonoBehaviour
 {
-    [SerializeField] private float forceMultiplier;
+    [SerializeField] private int boostVal;
+    private float boostPercent;
+
+    private void Start()
+    {
+        boostPercent = (100 + boostVal) / 100;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -12,7 +18,7 @@ public class SpeedBoost : MonoBehaviour
         {
             Debug.Log("Boosted");
             Vector3 playerForward = other.GetComponentInParent<PlayerController>().orientationCam.transform.forward;
-            other.GetComponentInParent<Rigidbody>().AddForce(playerForward * forceMultiplier, ForceMode.Impulse);
+            other.GetComponentInParent<Rigidbody>().AddForce(playerForward * boostPercent, ForceMode.Impulse);
         }
     }
 }
