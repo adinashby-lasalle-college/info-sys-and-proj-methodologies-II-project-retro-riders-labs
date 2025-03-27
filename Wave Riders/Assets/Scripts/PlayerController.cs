@@ -12,6 +12,9 @@ public class PlayerController : MonoBehaviour, IChannel
     [SerializeField] public int moveSpeed = 2;
     float time;
 
+    Vector3 newPos;
+    private float lerpSpeed = 1f;
+
     private void OnEnable()
     {
         InputManager.OnLeftInput += MoveLeft;
@@ -30,6 +33,7 @@ public class PlayerController : MonoBehaviour, IChannel
         playerPos = rb.transform.position;
         startingPos = rb.transform.position;
         HealthSystem.Singleton.AddObserver(this);
+        //newPos = new Vector3(rb.position.x, rb.position.y, rb.position.z);
     }
 
     private void Update()
@@ -42,6 +46,10 @@ public class PlayerController : MonoBehaviour, IChannel
         movement = orientationCam.transform.forward * moveSpeed * GetTimeMultiplier();
         movement.y = rb.velocity.y;
         rb.velocity = movement;
+
+
+        //rb.position = Vector3.Lerp(rb.position, playerPos, lerpSpeed);
+
     }
 
     public void Updates(int health)
@@ -76,6 +84,15 @@ public class PlayerController : MonoBehaviour, IChannel
         else
         {
             playerPos.x -= 10;
+
+            /*while (rb.position.x != playerPos.x)
+            {
+               newPos.x = Mathf.Lerp(newPos.x, playerPos.x, lerpSpeed);
+            } */
+
+
+            //rb.transform.Translate(Vector3.left *Time.deltaTime * 1/2) ;
+
             rb.MovePosition(playerPos);
         }
     }

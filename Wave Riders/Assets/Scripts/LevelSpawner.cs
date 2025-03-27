@@ -5,6 +5,7 @@ using UnityEngine;
 public class LevelSpawner : MonoBehaviour
 {
     [SerializeField] private Transform startPos;
+    [SerializeField] private Level startLevel;
     [SerializeField] private List<Level> levels = new List<Level>();
     [SerializeField] private int LvlLength;
 
@@ -22,7 +23,7 @@ public class LevelSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        tempLVL = Instantiate(levels[GetRandomLevel()].gameObject,startPos);
+        tempLVL = Instantiate(startLevel.gameObject,startPos);
         blockLength = tempLVL.GetComponent<Level>().StartCoords.position - tempLVL.GetComponent<Level>().EndCoords.position;
 
         for(int i = 0; i < LvlLength; i++)
