@@ -7,13 +7,12 @@ public class PlayerController : MonoBehaviour, IChannel
     Rigidbody rb;
     Vector3 playerPos;
     Vector3 startingPos;
+    Vector3 newPos;
     [SerializeField] public Transform orientationCam;
 
+    [SerializeField] private float lerpSpeed = 1f;
     [SerializeField] public int moveSpeed = 2;
     float time;
-
-    Vector3 newPos;
-    private float lerpSpeed = 1f;
 
     private void OnEnable()
     {
@@ -38,7 +37,6 @@ public class PlayerController : MonoBehaviour, IChannel
 
     private void Update()
     {
-        playerPos = rb.transform.position;
         //Get player position and lock it horizontally to the map
         CalculateTimePassed();
 
@@ -48,8 +46,8 @@ public class PlayerController : MonoBehaviour, IChannel
         rb.velocity = movement;
 
 
-        //rb.position = Vector3.Lerp(rb.position, playerPos, lerpSpeed);
-
+        float tempF = Mathf.Lerp(rb.position.x, playerPos.x, lerpSpeed);
+        rb.position = new Vector3(tempF, rb.position.y, rb.position.z);
     }
 
     public void Updates(int health)
@@ -93,7 +91,7 @@ public class PlayerController : MonoBehaviour, IChannel
 
             //rb.transform.Translate(Vector3.left *Time.deltaTime * 1/2) ;
 
-            rb.MovePosition(playerPos);
+            //rb.MovePosition(playerPos);
         }
     }
 
@@ -106,7 +104,7 @@ public class PlayerController : MonoBehaviour, IChannel
         else
         {
             playerPos.x += 10;
-            rb.MovePosition(playerPos);
+            //rb.MovePosition(playerPos);
         }
     }
 

@@ -3707,6 +3707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orientationCam: {fileID: 963194228}
+  lerpSpeed: 0.01
   moveSpeed: 8
 --- !u!54 &2122620489
 Rigidbody:
