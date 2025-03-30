@@ -18,12 +18,14 @@ public class PlayerController : MonoBehaviour, IChannel
     {
         InputManager.OnLeftInput += MoveLeft;
         InputManager.OnRightInput += MoveRight;
+        InputManager.OnJumpInput += Jump;
     }
 
     private void OnDisable()
     {
         InputManager.OnLeftInput -= MoveLeft;
         InputManager.OnRightInput -= MoveRight;
+        InputManager.OnJumpInput -= Jump;
     }
 
     private void Start()
@@ -82,15 +84,6 @@ public class PlayerController : MonoBehaviour, IChannel
         else
         {
             playerPos.x -= 10;
-
-            /*while (rb.position.x != playerPos.x)
-            {
-               newPos.x = Mathf.Lerp(newPos.x, playerPos.x, lerpSpeed);
-            } */
-
-
-            //rb.transform.Translate(Vector3.left *Time.deltaTime * 1/2) ;
-
             //rb.MovePosition(playerPos);
         }
     }
@@ -107,6 +100,16 @@ public class PlayerController : MonoBehaviour, IChannel
             //rb.MovePosition(playerPos);
         }
     }
+
+    private void Jump()
+    {
+        if (JumpBar.Singleton.barFull)
+        {
+            //Jump
+            JumpBar.Singleton.AddPower(-100);
+        }
+    }
+
 
     private void changeMoveSpeed()
     {

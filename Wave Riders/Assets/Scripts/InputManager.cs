@@ -32,6 +32,7 @@ public class InputManager : MonoBehaviour
     public static event System.Action OnLeftInput;
     public static event System.Action OnRightInput;
     public static event System.Action OnPauseInput;
+    public static event System.Action OnJumpInput;
 
     void OnEnable()
     {
@@ -39,6 +40,7 @@ public class InputManager : MonoBehaviour
         controls.Player.Left.performed += ctx => OnLeftInput?.Invoke();
         controls.Player.Right.performed += ctx => OnRightInput?.Invoke();
         controls.Player.Pause.performed += ctx => OnPauseInput?.Invoke();
+        controls.Player.Jump.performed += ctx => OnJumpInput?.Invoke();
 
         controls.Player.Enable();
     }

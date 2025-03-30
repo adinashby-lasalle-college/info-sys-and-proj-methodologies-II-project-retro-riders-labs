@@ -53,6 +53,15 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Jump"",
+                    ""type"": ""Button"",
+                    ""id"": ""53044c46-0195-4d85-a775-fb0d4c8a8a7a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -88,6 +97,17 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""action"": ""Pause"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b96d194a-8f7b-4b43-9c53-238be2f2a52c"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -99,6 +119,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_Player_Left = m_Player.FindAction("Left", throwIfNotFound: true);
         m_Player_Right = m_Player.FindAction("Right", throwIfNotFound: true);
         m_Player_Pause = m_Player.FindAction("Pause", throwIfNotFound: true);
+        m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -163,6 +184,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Left;
     private readonly InputAction m_Player_Right;
     private readonly InputAction m_Player_Pause;
+    private readonly InputAction m_Player_Jump;
     public struct PlayerActions
     {
         private @PlayerControls m_Wrapper;
@@ -170,6 +192,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         public InputAction @Left => m_Wrapper.m_Player_Left;
         public InputAction @Right => m_Wrapper.m_Player_Right;
         public InputAction @Pause => m_Wrapper.m_Player_Pause;
+        public InputAction @Jump => m_Wrapper.m_Player_Jump;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -188,6 +211,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Pause.started += instance.OnPause;
             @Pause.performed += instance.OnPause;
             @Pause.canceled += instance.OnPause;
+            @Jump.started += instance.OnJump;
+            @Jump.performed += instance.OnJump;
+            @Jump.canceled += instance.OnJump;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -201,6 +227,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Pause.started -= instance.OnPause;
             @Pause.performed -= instance.OnPause;
             @Pause.canceled -= instance.OnPause;
+            @Jump.started -= instance.OnJump;
+            @Jump.performed -= instance.OnJump;
+            @Jump.canceled -= instance.OnJump;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -223,5 +252,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         void OnLeft(InputAction.CallbackContext context);
         void OnRight(InputAction.CallbackContext context);
         void OnPause(InputAction.CallbackContext context);
+        void OnJump(InputAction.CallbackContext context);
     }
 }
