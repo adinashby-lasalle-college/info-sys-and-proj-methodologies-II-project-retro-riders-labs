@@ -17,9 +17,9 @@ public class SpeedBoost : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && other.GetComponent<PlayerController>().boostActive)
+        if (other.CompareTag("Player") && other.GetComponentInParent<PlayerController>().boostActive == false)
         {
-            PlayerController playerController = other.GetComponent<PlayerController>();
+            PlayerController playerController = other.GetComponentInParent<PlayerController>();
             Debug.Log("Boosted");
             playerController.boostActive = true;
             playerCollider = other;
