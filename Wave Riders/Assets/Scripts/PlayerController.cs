@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour, IChannel
     Vector3 playerPos;
     Vector3 startingPos;
     Vector3 newPos;
+    public bool boostActive = false;
     [SerializeField] public Transform orientationCam;
 
     [SerializeField] private float lerpSpeed = 1f;

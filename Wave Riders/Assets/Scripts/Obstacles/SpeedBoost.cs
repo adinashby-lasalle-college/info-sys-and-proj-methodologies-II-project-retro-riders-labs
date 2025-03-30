@@ -6,6 +6,9 @@ public class SpeedBoost : MonoBehaviour
 {
     [SerializeField] private int boostVal;
     private float boostPercent;
+    private float BoostDuration = 3f;
+    private Vector3 OriginalPlayerForwardVelocity;
+    private Collider playerCollider;
 
     private void Start()
     {
@@ -14,11 +17,25 @@ public class SpeedBoost : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && other.GetComponent<PlayerController>().boostActive)
         {
+            PlayerController playerController = other.GetComponent<PlayerController>();
             Debug.Log("Boosted");
+            playerController.boostActive = true;
+            playerCollider = other;
             Vector3 playerForward = other.GetComponentInParent<PlayerController>().orientationCam.transform.forward;
+            OriginalPlayerForwardVelocity = other.GetComponentInParent<Rigidbody>().velocity;
             other.GetComponentInParent<Rigidbody>().AddForce(playerForward * boostPercent, ForceMode.Impulse);
+            StartCoroutine(BoostTimer(playerController));
         }
+    }
+
+    private IEnumerator BoostTimer(PlayerController playerController)
+    {
+        Debug.Log("Boost Timer Started");
+        yield return new WaitForSeconds(BoostDuration);
+        playerCollider.GetComponentInParent<Rigidbody>().velocity = OriginalPlayerForwardVelocity;
+        playerController.boostActive = false; // Deactivate the boost
+        Debug.Log("Boost Ended");
     }
 }
