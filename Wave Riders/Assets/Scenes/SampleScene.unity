@@ -4424,9 +4424,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c51f663c4fef9144aa3c2667d0c632b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boostActive: 0
   orientationCam: {fileID: 963194228}
   lerpSpeed: 0.01
   moveSpeed: 8
+  jumpMultiplier: 15
 --- !u!54 &2122620489
 Rigidbody:
   m_ObjectHideFlags: 0

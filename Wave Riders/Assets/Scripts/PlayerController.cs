@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour, IChannel
 
     [SerializeField] private float lerpSpeed = 1f;
     [SerializeField] public int moveSpeed = 2;
+    [SerializeField] private int jumpMultiplier = 200;
     float time;
 
     private void OnEnable()
@@ -107,6 +108,7 @@ public class PlayerController : MonoBehaviour, IChannel
         if (JumpBar.Singleton.barFull)
         {
             //Jump
+            rb.AddForce(rb.transform.up * jumpMultiplier, ForceMode.Impulse);
             JumpBar.Singleton.AddPower(-100);
         }
     }
