@@ -108,6 +108,7 @@ public class PlayerController : MonoBehaviour, IChannel
         if (JumpBar.Singleton.barFull)
         {
             //Jump
+            AudioManager.instance.PlaySFX("JumpBoost");
             rb.AddForce(rb.transform.up * jumpMultiplier, ForceMode.Impulse);
             JumpBar.Singleton.AddPower(-100);
         }

@@ -25,6 +25,7 @@ public class JumpPowerUp : MonoBehaviour, ICollectible
     public void Collect()
     {
         JumpBar.Singleton.AddPower(25);
+        AudioManager.instance.PlaySFX("JumpPickUp");
         Destroy(this.gameObject);
     }
 

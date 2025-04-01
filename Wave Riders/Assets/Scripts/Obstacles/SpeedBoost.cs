@@ -26,6 +26,9 @@ public class SpeedBoost : MonoBehaviour
             Vector3 playerForward = other.GetComponentInParent<PlayerController>().orientationCam.transform.forward;
             OriginalPlayerForwardVelocity = other.GetComponentInParent<Rigidbody>().velocity;
             other.GetComponentInParent<Rigidbody>().AddForce(playerForward * boostPercent, ForceMode.Impulse);
+            
+            AudioManager.instance.PlaySFX("SpeedBoost");
+            
             StartCoroutine(BoostTimer(playerController));
         }
     }
