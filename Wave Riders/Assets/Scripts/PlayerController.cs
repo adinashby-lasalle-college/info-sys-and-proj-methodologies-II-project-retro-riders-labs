@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour, IChannel
     public bool boostActive = false;
     [SerializeField] public Transform orientationCam;
 
-    [SerializeField] private float lerpSpeed = 1f;
+    [SerializeField] private float lerpSpeed = 0.5f;
     [SerializeField] public int moveSpeed = 2;
     [SerializeField] private int jumpMultiplier = 200;
     float time;
