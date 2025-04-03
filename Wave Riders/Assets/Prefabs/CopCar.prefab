@@ -60,10 +60,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7189421611858438105, guid: a56a14b9dd6860a4a8665a67a824457a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0fbc152e623f5fe42b48d4af860bc592, type: 2}
     - target: {fileID: 919132149155446097, guid: a56a14b9dd6860a4a8665a67a824457a, type: 3}
       propertyPath: m_Name
       value: CopCar
       objectReference: {fileID: 0}
+    - target: {fileID: 8149806091470472098, guid: a56a14b9dd6860a4a8665a67a824457a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 696f170ef9686f04ea14703d4a34f520, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
