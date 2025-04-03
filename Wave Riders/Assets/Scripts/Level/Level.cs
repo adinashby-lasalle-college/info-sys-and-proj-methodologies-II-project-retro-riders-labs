@@ -18,8 +18,8 @@ public class Level : MonoBehaviour, ILevel
     public void GetCoords()
     {
         //Index needs to be changed when real level is implemented
-        StartCoords = this.transform.GetChild(4);
-        EndCoords = this.transform.GetChild(5);
+        StartCoords = this.transform.Find("StartCoords");
+        EndCoords = this.transform.Find("EndCoords");
     }
     public virtual void PlaceObstacles()
     {

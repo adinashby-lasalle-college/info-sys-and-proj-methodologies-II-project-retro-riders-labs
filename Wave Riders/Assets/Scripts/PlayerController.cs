@@ -79,26 +79,26 @@ public class PlayerController : MonoBehaviour, IChannel
 
     private void MoveLeft()
     {
-        if (playerPos.x - 10 < startingPos.x - 12)
+        if (playerPos.x - 14 < startingPos.x - 16)
         {
             return;
         }
         else
         {
-            playerPos.x -= 10;
+            playerPos.x -= 14;
             //rb.MovePosition(playerPos);
         }
     }
 
     private void MoveRight()
     {
-        if(playerPos.x + 10 > startingPos.x + 12)
+        if(playerPos.x + 14 > startingPos.x + 16)
         {
             return;
         }
         else
         {
-            playerPos.x += 10;
+            playerPos.x += 14;
             //rb.MovePosition(playerPos);
         }
     }
