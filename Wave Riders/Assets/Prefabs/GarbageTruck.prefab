@@ -57,9 +57,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: f03d12f7f1440db43a16685cfc1f5ba1, type: 2}
     - target: {fileID: -7511558181221131132, guid: bd06d3bcdc1e18f45b92378dde7790c6, type: 3}
+      propertyPath: m_Materials.Array.data[8]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0fbc152e623f5fe42b48d4af860bc592, type: 2}
+    - target: {fileID: -7511558181221131132, guid: bd06d3bcdc1e18f45b92378dde7790c6, type: 3}
       propertyPath: m_Materials.Array.data[16]
       value: 
-      objectReference: {fileID: -2381029421219970694, guid: bd06d3bcdc1e18f45b92378dde7790c6, type: 3}
+      objectReference: {fileID: 2100000, guid: 0fbc152e623f5fe42b48d4af860bc592, type: 2}
     - target: {fileID: 919132149155446097, guid: bd06d3bcdc1e18f45b92378dde7790c6, type: 3}
       propertyPath: m_Name
       value: GarbageTruck
