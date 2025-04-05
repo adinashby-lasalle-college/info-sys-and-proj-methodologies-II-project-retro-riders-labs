@@ -728,7 +728,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22ff282d99a847742a68d384ae458038, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HUDCanvas: {fileID: 1545789300}
 --- !u!4 &316919736
 Transform:
   m_ObjectHideFlags: 0
@@ -2917,7 +2916,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageEffect: {fileID: 945501394}
-  TimeToFade: 0.00001
 --- !u!1 &1558175417
 GameObject:
   m_ObjectHideFlags: 0
