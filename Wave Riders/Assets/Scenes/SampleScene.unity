@@ -2765,7 +2765,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 290323148}
-  m_PlaneDistance: 350
+  m_PlaneDistance: 500
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -4259,8 +4259,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boostActive: 0
   orientationCam: {fileID: 963194228}
-  lerpSpeed: 0.01
-  moveSpeed: 8
+  lerpSpeed: 0.03
+  moveSpeed: 10
   jumpMultiplier: 15
 --- !u!54 &2122620489
 Rigidbody:
