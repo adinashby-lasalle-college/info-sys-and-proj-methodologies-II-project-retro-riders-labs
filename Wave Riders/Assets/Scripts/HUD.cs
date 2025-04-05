@@ -5,7 +5,23 @@ using UnityEngine;
 public class HUD : MonoBehaviour, IChannel
 {
     [SerializeField] private CanvasGroup DamageEffect;
-    [SerializeField] private float TimeToFade;
+
+    #region Singleton
+    public static HUD Singleton;
+
+    public void Awake()
+    {
+        if (Singleton == null)
+        {
+            Singleton = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+    }
+    #endregion
 
     // Start is called before the first frame update
     void Start()

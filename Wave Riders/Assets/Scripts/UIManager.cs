@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] private GameObject HUDCanvas;
-
     #region Singleton
     public static UIManager Singleton;
 
@@ -26,7 +24,7 @@ public class UIManager : MonoBehaviour
     public void PauseGame()
     {
         Time.timeScale = 0f;
-        HUDCanvas.SetActive(false);
+        HUD.Singleton.gameObject.SetActive(false);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         AudioManager.instance.PauseMusic(true);
@@ -35,7 +33,7 @@ public class UIManager : MonoBehaviour
     public void ResumeGame()
     {
         Time.timeScale = 1f;
-        HUDCanvas.SetActive(true);
+        HUD.Singleton.gameObject.SetActive(true);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         AudioManager.instance.PauseMusic(false);
